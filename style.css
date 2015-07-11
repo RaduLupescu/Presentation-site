@@ -1,0 +1,16 @@
+.time {
+	font-size: 20px;
+	position: relative;
+	display: block;
+	font-family: fantasy;
+	margin: 2px 0 2px 0;
+}
+
+.title {
+	color: #8B0000;
+}
+
+.icon {
+	width: 48px !important;
+    height: 48px !important;
+}
