@@ -5,21 +5,34 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Radu Lupescu</title>
-        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="lib/angular.min.js"></script>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </head>
 
-    <body>
-        <div ng-controller="radtroller">
-            <h1 class="title">{{hello}}</h1>
+    <body ng-controller="radtroller">
+        <header class="main-title">
+            <h1>Radu Lupescu<br><span class="thin">Web Developer </span></h1>
+            <h3 class="thin">With knowledge of front-end and back-end</h2> 
+        </header>
+        <hr class="gradient_one" width="50%">
+        <div class="intro">
+            {{hello}}, 
+            <br>
+            My name is Radu, I'm a young developer looking to do what I enjoy while contiously improving. :)
+        </div>
+        <div>
+            <a href="cv/CV_RaduLupescu.pdf" download>Download my CV</a>
+        </div>
 
-            <h2 class="time">Time now: </h2>
-            <p class="time">{{hours}} : {{minutes}}<p>
-        
-            <p> Find me on LinkedIn! <p>
+        <p>Find me on: <p>
+        <a href="https://uk.linkedin.com/pub/radu-matei-lupescu/5a/9b8/bb8"><img class="icon" src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/256/social_linkedin_box_blue.png"></a>
 
-            <a href="https://uk.linkedin.com/pub/radu-matei-lupescu/5a/9b8/bb8"><br> <img class="icon" src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/256/social_linkedin_box_blue.png"></a>
+        <div style="text-align: left;">
+            <h4>Time now: </h2>
+            <p>{{hours}} : {{minutes}}</p>
         </div>
     </body>  
 

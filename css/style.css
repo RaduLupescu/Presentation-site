@@ -1,0 +1,53 @@
+.time {
+	font-size: 20px;
+	position: relative;
+	display: block;
+	font-family: fantasy;
+	margin: 2px 0 2px 0;
+}
+
+.intro {
+	text-align: left;
+	margin: 0 auto;
+}
+
+.icon {
+	width: 48px !important;
+    height: 48px !important;
+}
+
+.main-title {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+body {
+	font-family: 'Raleway';
+	font-size: 1.3rem;
+	background: pink;
+	text-align: center;
+}
+
+html {
+	font-size: 100%;
+}
+
+h1 {
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+hr.gradient_one {
+    border: 0;
+    height: 1px;
+    background: #63C;
+    background-image: -webkit-linear-gradient(left, #080410, #63C, #080410);
+    background-image: -moz-linear-gradient(left, #080410, #63C, #080410);
+    background-image: -ms-linear-gradient(left, #080410, #63C, #080410);
+    background-image: -o-linear-gradient(left, #080410, #63C, #080410);
+}

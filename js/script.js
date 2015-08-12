@@ -11,11 +11,11 @@ angular.module("radsite", [])
     $scope.greetAccordingToTime = function () {
         if ($scope.hours > 6) {
             if ($scope.hours < 13) {
-                return "Good morning!";
+                return "Good morning";
             } else if ($scope.hours < 19) {
-                return "Good afternoon!";
+                return "Good afternoon";
             } else if ($scope.hours < 24) {
-                return "Good evening!";
+                return "Good evening";
             }
         } else {
             return "Good night!";
