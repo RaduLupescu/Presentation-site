@@ -7,6 +7,9 @@ angular.module("radsite", [])
 
     $scope.hours = date.getHours();
     $scope.minutes = date.getMinutes();
+    if ($scope.minutes < 10) {
+        $scope.minutes = "0" + $scope.minutes;
+    }
 
     $scope.greetAccordingToTime = function () {
         if ($scope.hours > 6) {
