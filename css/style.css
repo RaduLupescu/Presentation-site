@@ -2,36 +2,42 @@
 
 /* IE */
 @keyframes slowSlide {
-    0% { background-position: 0 0 }
-    50% { background-position: 100% 0 }
-    100% { background-position: 0 0 }
+    0% { background-position: 0 50% }
+    25% { background-position: 50% 100% }
+    50% { background-position: 100% 50% }
+    75% { background-position: 50% 0 }
+    100% { background-position: 0 50% }
 }
 
 /* Chrome, Safari, Opera */ 
 @-webkit-keyframes bgslide {
-    0% { background-position: 0 0 }
-    50% { background-position: 100% 0 }
-    100% { background-position: 0 0 }
+    0% { background-position: 0 50% }
+    25% { background-position: 50% 100% }
+    50% { background-position: 100% 50% }
+    75% { background-position: 50% 0 }
+    100% { background-position: 0 50% }
 } 
 
 /* Firefox */
 @-moz-keyframes bgslide {
-    0% { background-position: 0 0 }
-    50% { background-position: 100% 0 }
-    100% { background-position: 0 0 }
+    0% { background-position: 0 50% }
+    25% { background-position: 50% 100% }
+    50% { background-position: 100% 50% }
+    75% { background-position: 50% 0 }
+    100% { background-position: 0 50% }
 }
 
 /* Highlighted text color */
 
 /* Firefox */
 ::-moz-selection {
-    background: #D66B59;
+    background: #FFCC00;
     text-shadow: none;
 }
 
 /* IE, Chrome, Safari, Opera */
 ::selection {
-    background: #D66B59;
+    background: #FFCC00;
     text-shadow: none;
 }
 
@@ -42,13 +48,13 @@ header {
 body {
     font-family: 'Raleway';
     font-size: 1em;
+    color: white;
     text-align: center;
-    background: url("../images/sunset-bg.jpg");
+    background: url("../images/triangle-mosaic-background.jpg");
     background-position: 0px 0px;
     animation: bgslide 180s linear infinite;
     -webkit-animation: bgslide 180s linear infinite;
     -moz-animation: bgslide 180s linear infinite;
-    padding: 1em;
 }
 
 h1 {
@@ -80,9 +86,9 @@ h3 {
     }
 
     body {
-        animation: bgslide 40s linear infinite;
-        -webkit-animation: bgslide 40s linear infinite;
-        -moz-animation: bgslide 40s linear infinite;
+        animation: bgslide 120s linear infinite;
+        -webkit-animation: bgslide 120s linear infinite;
+        -moz-animation: bgslide 120s linear infinite;
     }
 
     h1 {
@@ -103,6 +109,12 @@ h3 {
         font-size: 1.05em;
         font-size: 1.05rem;
     }
+
+    .transparent-frame {
+        width: 900px;
+        margin: 0 auto;
+    }
+    
 }
 
 .thin {
@@ -114,7 +126,16 @@ h3 {
     text-align: left;
     margin: 20px auto;
     font-size: 1.3em;
-    font-size: 1.3rem;    
+    font-size: 1.3rem;
+    font-weight: 100;    
+}
+
+.content a {
+    color: white;
+}
+
+.content a:hover {
+    color: #FFCC00;
 }
 
 .icon {
@@ -122,11 +143,17 @@ h3 {
     height: 48px !important;
 }
 
+.transparent-frame {
+    background: rgba(0, 0, 31, 0.4);
+    padding: 1em;
+}
+
 hr.gradient-line {
-    border: 0;
+    border: 1;
+    border-color: black;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, #0195A2, #086F7D);
-    background-image: -moz-linear-gradient(left, #0195A2, #086F7D);
-    background-image: -ms-linear-gradient(left, #0195A2, #086F7D);
-    background-image: -o-linear-gradient(left, #0195A2, #086F7D);
+    background-image: -webkit-linear-gradient(left, #E5C657, #DE7036, #FC3546, #346070, #005749);
+    background-image: -moz-linear-gradient(left, #E5C657, #DE7036, #FC3546, #346070, #005749);
+    background-image: -ms-linear-gradient(left, #E5C657, #DE7036, #FC3546, #346070, #005749);
+    background-image: -o-linear-gradient(left, #E5C657, #DE7036, #FC3546, #346070, #005749);
 }
