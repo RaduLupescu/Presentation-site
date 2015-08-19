@@ -46,6 +46,8 @@ body {
     background: url("../images/sunset-bg.jpg");
     background-position: 0px 0px;
     animation: bgslide 180s linear infinite;
+    -webkit-animation: bgslide 180s linear infinite;
+    -moz-animation: bgslide 180s linear infinite;
     padding: 1em;
 }
 
@@ -79,6 +81,8 @@ h3 {
 
     body {
         animation: bgslide 40s linear infinite;
+        -webkit-animation: bgslide 40s linear infinite;
+        -moz-animation: bgslide 40s linear infinite;
     }
 
     h1 {
