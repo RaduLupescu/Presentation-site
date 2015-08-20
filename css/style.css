@@ -50,7 +50,7 @@ body {
     font-size: 1em;
     color: white;
     text-align: center;
-    background: url("../images/triangle-mosaic-background.jpg");
+    background: url("../images/triangle-mosaic-background.jpg") no-repeat;
     background-position: 0px 0px;
     animation: bgslide 180s linear infinite;
     -webkit-animation: bgslide 180s linear infinite;
@@ -76,6 +76,10 @@ h3 {
     font-size: 1.1rem;
     letter-spacing: 0.1em;
     color: #FFF;
+}
+
+p {
+    margin: 35px 0 35px 0;
 }
 
 /* Responsive to screens below tablet size (aka phone) */
@@ -112,12 +116,13 @@ h3 {
 
     .transparent-frame {
         width: 900px;
-        margin: 0 auto;
+        min-width: 720px;
+        min-height: 500px;
+        margin: 0 auto; 
     }
-    
 }
 
-.thin {
+header .thin {
     font-weight: 300;
 }
 
@@ -138,9 +143,16 @@ h3 {
     color: #FFCC00;
 }
 
-.icon {
-    width: 48px !important;
-    height: 48px !important;
+.content .item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+
+.content .icon {
+    width: 52px !important;
+    height: 52px !important;
 }
 
 .transparent-frame {
