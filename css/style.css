@@ -1,7 +1,7 @@
 /* Background animation */
 
 /* IE */
-@keyframes slowSlide {
+@keyframes bgslide {
     0% { background-position: 0 50% }
     25% { background-position: 50% 100% }
     50% { background-position: 100% 50% }
@@ -50,7 +50,7 @@ body {
     font-size: 1em;
     color: white;
     text-align: center;
-    background: url("../images/triangle-mosaic-background.jpg") no-repeat;
+    background: url("../images/triangle-mosaic-background.jpg") repeat-x;
     background-position: 0px 0px;
     animation: bgslide 180s linear infinite;
     -webkit-animation: bgslide 180s linear infinite;
