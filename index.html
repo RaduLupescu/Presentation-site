@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html ng-app="radsite">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Radu Lupescu</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1"> 
-        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="lib/angular.min.js"></script>
-        <script src="js/script.js"></script>
-    </head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Radu Lupescu</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="lib/angular.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
 
-    <body ng-controller="radtroller">
-        <div class="transparent-frame">
-            <header class="main-title">
-                <h1>Radu Lupescu<br><span class="thin">Web Developer</span></h1>
-                <h3 class="thin">With knowledge of front-end and back-end development</h2> 
-            </header>
-            <hr class="gradient-line" width="50%">
-            <div class="content">
-                <p> {{hello}}, 
-                    <br>
-                    My name is Radu, I'm a young developer looking to do what I enjoy while continuously improving :) 
-                </p>
-                <p>
-                    I have previous experience with the following technologies and methodologies:
-                    <br> <br> 
-                    JavaScript (ES5 / ES6) • HTML5 • CSS3 • AngularJS • NodeJS • HapiJS • MongoDB • Grunt • ASP.NET • C# • SQL • C++ • Java • SASS • Git • MVC • Unit tests • Karma • Integration Tests • SCRUM • KanBan • GoogleMapsAPI • Autonomy IDOL • IIS • Windows server
-                </p>
-                <div> 
-                    I've worked on the following websites (not integrally done by me):
-                    <ul>
-                        <li> 
-                            <a href="http://www.egi.co.uk/">EGi.co.uk website</a> based on ASP.NET and SQL
-                        </li>
-                        <li>
-                            <a href="http://www.egi.co.uk/sitefinder/">EGi's Sitefinder</a> project based on MEAN tech stack
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    For more about me,
-                    <a href="cv/CV_RaduLupescu.pdf" download>here's my CV</a>
-                </p>
-                <p>
-                    You can also find me on: <br> <br>
-                    <a class="item" href="https://uk.linkedin.com/pub/radu-matei-lupescu/5a/9b8/bb8">
-                        <img class="icon" src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/256/social_linkedin_box_blue.png">
-                        <span style="display: block;">LinkedIn</span>
-                    </a> 
-                    <a class="item" href="https://github.com/RaduLupescu">
-                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
-                        <span style="display: block;">GitHub</span>
-                    </a>
-                <p>
-            </div>
-        </div>
-    </body>  
+<body ng-controller="radtroller">
+	<div class="transparent-frame">
+		<header>
+			<h1>Radu Lupescu</h1>
+			<h2 class="thin">Web Developer</h2>
+			<h3 class="thin">With knowledge of front-end and back-end development</h3>
+		</header>
 
+		<hr class="gradient-line" width="50%">
+
+		<div class="content">
+			<section id="hello">
+				<label class="control-label">
+					{{hello}},
+				</label>
+				<div>My name is Radu, I'm a young developer looking to do what I enjoy while continuously improving :)</div>
+			</section>
+
+			<section id="experience">
+				<label class="control-label">
+					I have previous experience with the following technologies and methodologies:
+				</label>
+				<div>
+					{{experience}}
+				</div>
+			</section>
+
+			<section id="work"> 
+				<label class="control-label">I've worked on the following websites (not integrally done by me):</label>
+				<ul>
+					<li>
+						<a href="http://www.egi.co.uk/">EGi.co.uk website</a> based on ASP.NET and SQL
+					</li>
+					<li>
+						<a href="http://www.egi.co.uk/sitefinder/">EGi's Sitefinder</a> project based on MEAN tech stack
+					</li>
+				</ul>
+			</section>
+
+			<section id="cv">
+				<label>For more about me,</label>
+				<a href="cv/CV_RaduLupescu.pdf" download>here's my CV.</a>
+			</section>
+
+			<section id="contact">
+				<label class="control-label">You can also find me on:</label>
+				<div class="logo-links">
+					<a class="logo-link" href="https://uk.linkedin.com/pub/radu-matei-lupescu/5a/9b8/bb8">
+						<img class="logo-image" src="images/linkedin_circle_color-512.png">
+						<label>LinkedIn</label>
+					</a>
+					<a class="logo-link" href="https://github.com/RaduLupescu">
+						<img class="logo-image" src="images/github-512.png">
+						<label>GitHub</label>
+					</a>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
 </html>
