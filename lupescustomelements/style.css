@@ -5,12 +5,12 @@
 
 @font-face {
 	font-family: Marsneveneksk;
-	src: url("Fonts/marsneveneksk/MARSNEVENEKSK.otf") format("opentype");
+	src: url("fonts/marsneveneksk/MARSNEVENEKSK.otf") format("opentype");
 }
 
 @font-face {
 	font-family: Zektron;
-	src: url("Fonts/zekton/zekton rg.ttf");
+	src: url("fonts/zekton/zekton rg.ttf");
 }
 
 .title {
@@ -48,7 +48,7 @@
 
 .inputs-strip {
 	padding-bottom: 60px;
-	background: url("Images/forest-patrol.jpg") no-repeat;
+	background: url("images/forest-patrol.jpg") no-repeat;
 	background-size: cover;
 	background-position-y: -340px;
 }
@@ -90,19 +90,19 @@ a.special-button:focus {
 
 .cosmo-knight {
 	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__sknl.jpg */
-	background: url("Images/justinmaller_helmetica-ii_THUMB__sknl.jpg");
+	background: url("images/justinmaller_helmetica-ii_THUMB__sknl.jpg");
 	background-position: 400px 500px;
 }
 
 .joker {
 	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__nqkl.jpg */
-	background: url("Images/justinmaller_helmetica-ii_THUMB__nqkl.jpg");
+	background: url("images/justinmaller_helmetica-ii_THUMB__nqkl.jpg");
 	background-position: 400px 500px;
 }
 
 .hulk {
 	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__xa4x.jpg */
-	background: url("Images/justinmaller_helmetica-ii_THUMB__xa4x.jpg");
+	background: url("images/justinmaller_helmetica-ii_THUMB__xa4x.jpg");
 	background-position: 400px 500px;
 }
 
