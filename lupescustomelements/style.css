@@ -1,0 +1,202 @@
+/*
+	Material design color palette for the strips at: http://materialuicolors.co/?ref=flatuicolors.com 
+	Note: use Level[300]
+*/
+
+@font-face {
+	font-family: Marsneveneksk;
+	src: url("Fonts/marsneveneksk/MARSNEVENEKSK.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Zektron;
+	src: url("Fonts/zekton/zekton rg.ttf");
+}
+
+.title {
+	font-family: 'Marsneveneksk';
+	font-size: 70px;
+	text-align: center;
+}
+
+.subtitle {
+	font-family: 'Marsneveneksk';
+	font-size: 56px;
+	color: black;
+	text-align: center;
+}
+
+.item-title {
+	font-family: 'Zektron';
+}
+
+.strip {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.title-strip {
+	/* Name on the color-palette website: Green */
+	background-color: #81C784;
+}
+
+.special-button-strip {
+	/* Name on the color-palette website: Red */
+	background-color: #E57373;
+	padding-bottom: 60px;
+}
+
+.inputs-strip {
+	padding-bottom: 60px;
+	background: url("Images/forest-patrol.jpg") no-repeat;
+	background-size: cover;
+	background-position-y: -340px;
+}
+
+.special-button {
+    display: block;
+	height: 100px;
+	width: 400px;
+	border: 2px solid #FFF;
+	color: #FFF;
+	font-size: 30px;
+	border-radius: 0;
+    margin: 0 auto;
+    font-family: 'Zektron';
+    letter-spacing: 1px;
+
+    -webkit-transition: background-position .1s ease-in, padding-left .1s ease-in;
+    -moz-transition: background-position .1s ease-in, padding-left .1s ease-in;
+    -o-transition: background-position .1s ease-in, padding-left .1s ease-in;
+    transition: background-position .1s ease-in, padding-left .1s ease-in;
+}
+
+.special-button:focus {
+	outline: none;
+	border-color: #4DD0E1;
+}
+
+a.special-button {
+	color: #FFF;
+    text-align: center;
+    line-height: 100px; /* Same as the height of the button, used to vertically align the text to centre */
+}
+
+a.special-button:hover,
+a.special-button:focus {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.cosmo-knight {
+	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__sknl.jpg */
+	background: url("Images/justinmaller_helmetica-ii_THUMB__sknl.jpg");
+	background-position: 400px 500px;
+}
+
+.joker {
+	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__nqkl.jpg */
+	background: url("Images/justinmaller_helmetica-ii_THUMB__nqkl.jpg");
+	background-position: 400px 500px;
+}
+
+.hulk {
+	/* http://www.justinmaller.com/img/projects/thumbnail/THUMB__xa4x.jpg */
+	background: url("Images/justinmaller_helmetica-ii_THUMB__xa4x.jpg");
+	background-position: 400px 500px;
+}
+
+.cosmo-knight:hover,
+.joker:hover,
+.hulk:hover {
+	background-position: 600px 500px;
+	padding-left: 180px;
+}
+
+
+
+
+.fancy-input {
+	font-family: 'Zektron';
+    letter-spacing: 1px;
+	height: 60px;
+	position: relative;
+	border-radius: 0;
+	border-color: grey;
+}
+
+.fancy-input:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #4DD0E1;
+}
+
+.fancy-input-label {
+	display: block;
+	position: relative;
+	top: -40px;
+	left: 13px;
+	height: 20px;
+	margin-bottom: 0;
+
+	font-family: 'Zektron';
+    letter-spacing: 1px;
+	font-weight: 400;
+	color: gray;
+
+	-webkit-transition: top .5s, font-size .5s, color .5s;
+    -moz-transition: top .5s, font-size .5s, color .5s;
+    -o-transition: top .5s, font-size .5s, color .5s;
+    transition: top .5s, font-size .5s, color .5s;
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+
+.fancy-input.fancy-input-populated {
+	padding-top: 30px;
+}
+
+.fancy-input.fancy-input-populated ~ .fancy-input-label {
+	top: -50px;
+	font-size: 12px;
+	color: lightgray;
+}
+
+/* Transparent background styling */
+.fancy-input.-transparent {
+	/*background-color: transparent;*/
+    background-color: rgba(219, 219, 219, 0.2);
+}
+
+.fancy-input-populated.-transparent ~ .fancy-input-label {
+	color: gray;
+}
+
+
+/* Minimalist look styling */
+.fancy-input.-material {
+	background-color: transparent;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-color: #FFF;
+	color: #FFF;
+	padding-top: 36px;
+
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.-material ~ .fancy-input-label {
+	top: -25px;
+	color: #FFF;
+}
+
+.fancy-input-populated.-material ~ .fancy-input-label {
+	top: -44px;
+}

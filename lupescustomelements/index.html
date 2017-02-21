@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/fancy_input.ctrl.js"></script>
+</head>
+
+<body ng-app="LupesCustomElements">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 strip title-strip">
+				<h1 class="title">Lupe's&nbsp;Custom&nbsp;Elements</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 strip special-button-strip">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="subtitle">Buttons</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<button class="special-button hulk">
+							<i class="fa fa-cube"></i>
+							Button!
+						</button>
+					</div>
+				
+					<div class="col-sm-4">
+						<a class="special-button cosmo-knight"
+						   href="http://www.justinmaller.com/project/helmetica-ii/">
+							<i class="fa fa-external-link"></i>
+							Link!
+						</a>
+					</div>
+
+					<div class="col-sm-4">
+						<button class="special-button joker">
+							<i class="fa fa-bomb"></i>
+							Shiznittt!
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" ng-controller="fancyInputCtrl">
+			<div class="col-sm-12 strip inputs-strip">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="subtitle">Inputs</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<h3 class="item-title">Normal</h3>
+						<input type="text" placeholder="" class="form-control fancy-input" ng-model="inputValue" 
+							   ng-class="{'fancy-input-populated': inputValue}">
+
+						<label class="fancy-input-label">
+							Numeric field:
+						</label>
+					</div>
+
+					<div class="col-sm-4">
+						<h3 class="item-title">Transparent</h3>
+						<input type="text" placeholder="" class="form-control fancy-input -transparent" ng-model="inputValue" 
+							   ng-class="{'fancy-input-populated': inputValue}">
+
+						<label class="fancy-input-label">
+							Numeric field:
+						</label>
+					</div>
+
+					<div class="col-sm-4">
+						<h3 class="item-title">Material design</h3>
+						<input type="text" placeholder="" class="form-control fancy-input -material" ng-model="inputValue" 
+							   ng-class="{'fancy-input-populated': inputValue}">
+
+						<label class="fancy-input-label">
+							Numeric field:
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
