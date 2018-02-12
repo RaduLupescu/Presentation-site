@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 
-	angular.module('radsite').controller('pay360', pay360);
+	angular.module('radsite').controller('Pay360Ctrl', Pay360Ctrl);
 
-	pay360.inject = ["CRUDService"];
+	Pay360Ctrl.inject = ["CRUDService"];
 
-	function pay360(CRUDService) {
+	function Pay360Ctrl(CRUDService) {
 		var viewModel = this;
 
 		viewModel.api = {
