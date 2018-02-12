@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="lib/angular.min.js"></script>
+	<script src="js/script.js"></script>
 	<script type="text/javascript" src="js/crud.service.js" charset="UTF-8"></script>
 	<script type="text/javascript" src="js/pay360.js" charset="UTF-8"></script>
-	<script src="js/script.js"></script>
 </head>
 
 <body ng-controller="pay360">
-	<button ng-click="pay360.getPayment()"></button>
+	<button ng-click="pay360.getPayment()">Get payment</button>
 	<iframe id="paymentIframe" ng-src="{{pay360.paymentUrl}}"></iframe>
 
 	<!-- <div class="transparent-frame">
