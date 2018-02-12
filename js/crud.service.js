@@ -71,6 +71,8 @@
 			var deferred = $q.defer();
 
 			var headers = contentTypeHeaders(object);
+			headers["Authorization"] = "Basic UFhJQ1o1Qk01Vkg0VklYQkJXT0E3UEhFNEk6WUN5cDRzdWdPTVpGN1ppajFHNE9Tdz09";
+
 			var data = fallbackToDefaultData(object);
 
 			$http({
