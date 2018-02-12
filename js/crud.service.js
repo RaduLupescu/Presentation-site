@@ -28,7 +28,10 @@
 
 		function contentTypeHeaders(object) {
 			if(object) {
-				return {'Content-Type': 'application/json'};
+				return {
+					'Content-Type': 'application/json',
+					"Authorization": "Basic UFhJQ1o1Qk01Vkg0VklYQkJXT0E3UEhFNEk6WUN5cDRzdWdPTVpGN1ppajFHNE9Tdz09"
+				};
 			}
 			return {'Content-Type': 'text/plain'};
 		}
@@ -71,9 +74,9 @@
 			var deferred = $q.defer();
 
 			var headers = contentTypeHeaders(object);
-			headers["Authorization"] = "Basic UFhJQ1o1Qk01Vkg0VklYQkJXT0E3UEhFNEk6WUN5cDRzdWdPTVpGN1ppajFHNE9Tdz09";
-
 			var data = fallbackToDefaultData(object);
+
+			console.log("CRUDService", headers, object);
 
 			$http({
 				method: 'POST',
