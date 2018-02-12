@@ -30,7 +30,10 @@
 			if(object) {
 				return {
 					'Content-Type': 'application/json',
-					"Authorization": "Basic UFhJQ1o1Qk01Vkg0VklYQkJXT0E3UEhFNEk6WUN5cDRzdWdPTVpGN1ppajFHNE9Tdz09"
+					"Authorization": "Basic UFhJQ1o1Qk01Vkg0VklYQkJXT0E3UEhFNEk6WUN5cDRzdWdPTVpGN1ppajFHNE9Tdz09",
+					"Access-Control-Allow-Headers": "Content-Type",
+					"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+					"Access-Control-Allow-Origin": "*"
 				};
 			}
 			return {'Content-Type': 'text/plain'};
