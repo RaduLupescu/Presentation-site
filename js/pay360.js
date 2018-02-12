@@ -52,9 +52,10 @@
 		  "customFields" : { }
 		};
 
+		console.log("Controller instantiated", viewModel);
+
 		viewModel.getPayment = function () {
 			var randomId = Math.floor((Math.random() * 10000000) + 1);
-
 			var apiRequest = angular.copy(viewModel.apiRequest);
 
 			apiRequest.transaction.merchantReference = randomId;
